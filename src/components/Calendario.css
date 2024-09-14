@@ -1,0 +1,5 @@
+/* Calendario.css */
+.day-disabled {
+    color: #b0b0b0; /* Color gris para los domingos */
+    pointer-events: none; /* Deshabilitar la selección de estos días */
+}
