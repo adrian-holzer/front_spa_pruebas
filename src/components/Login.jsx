@@ -14,7 +14,7 @@ const Login = () => {
     const token = localStorage.getItem('accessToken');
     if (token) {
       // Redirige al usuario a la página de "Ver Turnos" o a donde desees
-      navigate('/misTurnos');
+      navigate('/empleo');
     }
     // Dependencias vacías para que useEffect solo se ejecute una vez
   }, [navigate]); // La lista de dependencias solo contiene `navigate` 

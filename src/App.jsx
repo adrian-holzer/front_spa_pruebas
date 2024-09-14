@@ -8,6 +8,11 @@ import RutaProtegida from './components/RutaProtegida';
 import CrearTurno from './components/CrearTurno';
 import CategoriasServicios from './components/CategoriasServicios';
 import MisTurnos from './components/MisTurnos';
+import UploadCv from './components/UploadCv'; // Tu componente UploadCv
+import EmpleoList from './components/EmpleoList';
+import NavBar from './components/NavBar';
+import EmpleoListWithPostulaciones from './components/EmpleoListWithPostulaciones'; // Asegúrate de la ruta correcta
+
 import Logout from './components/Logout';
 import { Link } from 'react-router-dom';
 
@@ -20,15 +25,16 @@ const App = () => {
 
     
     <Router>
-         
 
       <Routes>
+      <Route path="/" element={<NavBar />} />
+      <Route path="/logout" element={<Logout />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registrarUsuario" element={<RegisterUser />} />
 
-
-
+        <Route path="/empleo" element={<EmpleoList />} />
         <Route path="/crearTurno" element={<CrearTurno />} />
+        <Route path="/empleosProfesional" element={<EmpleoListWithPostulaciones />} />
 
         <Route path="/misTurnos" element={<RutaProtegida>
           <MisTurnos />        </RutaProtegida>
