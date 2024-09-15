@@ -21,7 +21,7 @@ const PostulacionModal = ({ empleo, onClose }) => {
         formData.append('id_empleo', empleo.idEmpleo);
 
         try {
-            await axios.post('http://149.50.141.49:8080/api/postulacion/upload', formData, {
+            await axios.post('/api/postulacion/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
