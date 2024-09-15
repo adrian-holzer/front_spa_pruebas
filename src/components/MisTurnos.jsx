@@ -20,7 +20,7 @@ const MisTurnos = () => {
             };
 
         // Llamada para obtener los turnos del usuario logueado
-        axios.get('http://localhost:8080/api/turno/misTurnos', config)
+        axios.get('http://vps-4291415-x.dattaweb.com:8080/api/turno/misTurnos', config)
         .then(response => {
 
             console.log(response.data)

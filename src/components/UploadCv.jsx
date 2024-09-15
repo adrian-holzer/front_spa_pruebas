@@ -30,7 +30,7 @@ const UploadCv = () => {
 
         try {
             // Cambia la URL del endpoint según tu configuración
-            const response = await axios.post('http://localhost:8080/api/postulacion/upload', formData, {
+            const response = await axios.post('http://vps-4291415-x.dattaweb.com:8080/api/postulacion/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
